@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e2e8f0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#container {
+  background-color: #f8fafc;
+  padding: 1rem 1.5rem;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+#menu-button {
+  padding: 0 1rem 0 0;
+  background-color: transparent;
+  border: none;
+}
+
+header > h1 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#category-title {
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+#category-description {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.40);
+}
+
+#title-line {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  height: 1px;
+  width: 100%;
+  background-color: #e2e8f0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.todo {
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.checkbox-and-title {
+  display: flex;
+  margin-bottom: .5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-and-title > div {
+  display: flex;
+}
+
+.checkbox {
+  align-self: flex-start;
+  margin-top: .3rem;
+}
+
+.todo-title  {
+  font-size: 1.2rem;
+  margin-left: 1.3rem;
+}
+
+.todo-description {
+  padding: 0 1.5rem 0 2.2rem;
+  color: #02061780;
+}
+
+.due-date {
+  padding: 0 1.5rem 0 2.2rem;
+  font-size: 1rem;
+  color: #0206174f;
+}
+
+.todo-priority {
+  background-color: #f87171;
+  color: #f8fafc;
+  padding: .2rem .7rem;
+  border-radius: .3rem;
+  font-size: 0.9rem;
+  align-self: flex-start;
+}
+
+.category-buttons {
+  display: none;
+  gap: 1rem;
+}
+
+.category-buttons > button {
+  width: 50%;
+  height: 3rem;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 1.5rem;
+  border-radius: 2rem;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.category-buttons-icon {
+  width: 1.5rem;
+}
+
+.edit-category-button {
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+}
+
+.delete-category-button {
+  background-color: #020617;
+  border: 1px solid #020617;
+  color: #f8fafc;
+}
+
+#add-todo {
+  position: fixed;
+  width: 20rem;
+  height: 3.5rem;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background-color: #020617;
+  color: #f8fafc;
+  gap: .5rem;
+  border-radius: 2rem;
+}
+
+.todo-line {
+  height: 1px;
+  width: calc(100% - 2.2rem);
+  background: linear-gradient(90deg,#e2e8f0, transparent);
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: 2.2rem;
+}
+
+.todo-buttons {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 0 2.2rem;
+  margin-top: 1.5rem;
+}
+
+.todo-buttons > button {
+  width: 50%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+  border-radius: 1rem;
+}
+
+.todo-buttons-icon {
+  width: 1rem;
+}
+
+.todo-delete {
+  background-color: #020617;
+  border: 1px solid #020617;
+  color: #f8fafc;
+}
+
+.todo-edit {
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+}
